@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Social media dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark-bg">
+  <main>
+    <section>
+    <div class="top-container">
+      <div class="top-header-container">
+        <h1 class="title-header dark-main-text">Social Media Dashboard</h1>
+        <h2 class="total-followers-header dark-secondary-text">Total followers: 440,000</h2>
+      </div>
+        <div class="mode-switch-container">
+          <p class="switch-text" id="switch-message">Dark Mode</p>
+          <div class="switch-container dark-mode-switch-bg">
+            <div class="dark-mode-switch" id="switch"></div>
+          </div>
+        </div>
+      </div>
+      <div class="top-dashboard">
+        <div class="card-container">
+          <div class="bg-card fb-color">
+          </div>
+          <div class="follower-card dark-card-bg">
+            <div class="follower-container">
+              <img class="follower-img" alt="Facebook logo" src="images/icon-facebook.svg" aria-hidden="true">
+              <h1 class="sm-handle dark-secondary-text">@Lappugangg</h1>
+            </div>
+            <p class="follower-count-number dark-main-text">1987</p>
+            <p class="follower-count-text dark-secondary-text">FOLLOWERS</p>
+            <div class="change-container-top">
+              <img class="change-img-top" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+              <p class="change-counter increasing">10 today</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="bg-card tw-color">
+          </div>
+          <div class="follower-card dark-card-bg">
+            <div class="follower-container">
+              <img class="follower-img" alt="Twitter logo" src="images/icon-twitter.svg" aria-hidden="true">
+              <h1 class="sm-handle dark-secondary-text">@lappugangg</h1>
+            </div>
+            <p class="follower-count-number dark-main-text">44000</p>
+            <p class="follower-count-text dark-secondary-text">FOLLOWERS</p>
+            <div class="change-container-top">
+              <img class="change-img-top" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+              <p class="change-counter increasing">92 today</p>
+            </div>
+            </div>
+        </div>
+        <div class="card-container">
+          <div class="bg-card ig-color">
+          </div>
+          <div class="follower-card dark-card-bg">
+          <div class="follower-container">
+            <img class="follower-img" alt="Instagram logo" src="images/icon-instagram.svg" aria-hidden="true">
+            <h1 class="sm-handle dark-secondary-text">@lappugangg</h1>
+          </div>
+            <p class="follower-count-number dark-main-text">11k</p>
+            <p class="follower-count-text dark-secondary-text">FOLLOWERS</p>
+          <div class="change-container-top">
+            <img class="change-img-top" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+            <p class="change-counter increasing">1099 today</p>
+          </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="bg-card yt-color">
+          </div>
+          <div class="follower-card dark-card-bg">
+          <div class="follower-container">
+            <img class="follower-img" alt="Youtube logo" src="images/icon-youtube.svg" aria-hidden="true">
+            <h1 class="sm-handle dark-secondary-text">@lappugangg</h1>
+          </div>
+            <p class="follower-count-number dark-main-text">8239</p>
+            <p class="follower-count-text dark-secondary-text">FOLLOWERS</p>
+          <div class="change-container-top">
+            <img class="change-img-top-dec" alt="picture of a red arrow" src="images/icon-down.svg" aria-hidden="true">
+            <p class="change-counter decreasing">144 today</p>
+          </div>
+          </div>
+      </div>
+      </div>
+      <h1 class="title-header dark-main-text">Overview - Today</h2>
+      <div class="bottom-dashboard">
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Page Views</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-facebook.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">87</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom increasing">3%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Likes</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-facebook.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">52</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom-dec" alt="picture of a red arrow" src="images/icon-down.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom decreasing">2%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Likes</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-instagram.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">5462</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom increasing">2257%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Profile Views</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-instagram.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">52k</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom increasing">1375%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Retweets</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-twitter.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">117</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom increasing">303%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Likes</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-twitter.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">507</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom" alt="picture of a green arrow" src="images/icon-up.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom increasing">553%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Likes</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-youtube.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">107</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom-dec" alt="picture of a red arrow" src="images/icon-down.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom decreasing">19%</p>
+        </div>
+        </div>
+        <div class="metric-card dark-card-bg">
+          <h1 class="metric-header dark-secondary-text">Total Views</h1>
+          <div class="img-container">
+            <img class="metric-img" alt="facebook icon" src="images/icon-youtube.svg" aria-hidden="true">
+          </div>
+          <p class="metric-number dark-main-text">1407</p>
+        <div class="change-container-bottom">
+          <img class="change-img-bottom-dec" alt="picture of a red arrow" src="images/icon-down.svg" aria-hidden="true">
+          <p class="change-counter change-counter-bottom decreasing">12%</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Code Alpha</a>.
+      Coded by <a href="#">Fiza</a>.
+    </div>
+  </main>
+</body>
+</html>
